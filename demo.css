@@ -10,6 +10,8 @@
 }
 
 .page-header {
+    display: flex;
+    flex-direction: row;
     height: 60px;
     width: 100%;
     position: absolute;
@@ -21,7 +23,7 @@
     position: absolute;
     right: 15px;
     top: 70px;
-    height: calc(100vh - 80px);
+    height: fit-content;
     width: 300px;
     background-color: aliceblue;
     border-radius: 10px;
@@ -48,15 +50,24 @@ thead {
     position: absolute;
     left: 10px;
     top: 70px;
-    height: calc(40vh - 60px);
+    height: fit-content;
     width: 250px;
     background-color: aliceblue;
     border-radius: 10px;
     box-shadow: 3px 3px 3px 3px #888888;
 }
 
+.content {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
 .input-form {
    
+}
+
+label {
+    color: rgb(95, 95, 95);
 }
 
 form {
@@ -72,6 +83,9 @@ form {
 input {
     align-self: center;
     margin-bottom: 10px;
+    border: .2px solid darkgray;
+    border-radius: 4px;
+    padding: 5px;
 }
 
 .actions {
@@ -81,17 +95,41 @@ input {
     margin-top: 50px;
 }
 
-button {
-
+button {    
+    border: wheat;
 }
+
+button:hover {
+    cursor: pointer;
+    background-color: #547abd;
+}
+
+.action-btn {
+    border: wheat;
+    border-radius: 4px;
+    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
 
 h2 {
     color: aliceblue;
     margin-top: 0px;
+    margin-bottom: 0px;
+    align-self: center;
+    margin-left: 20px;
+}
+
+button {
+    color: white;
+    background-color: cornflowerblue;
 }
 
 .panel-head {
     text-align: center;
+    width: 100%;
+    border: 0px;
 }
 
 h4 {
@@ -114,7 +152,7 @@ ul {
    
    ul li {
      margin-top: 20px;
-     background-color: antiquewhite;
+     background-color: lightgrey;
      padding: 10px;
      border-radius: 10px;
    }

@@ -21,52 +21,52 @@
   <body id="markers-on-the-map" class="main-container">
     
     <div class="page-header">
-      <img src="" alt="">
+      <img src="img/concrete.jpg" width="50px" height="60px" alt="">
       <h2>CONCRETE</h2>
     </div>
     
     <div id="map" #map></div>
     <div id="panel" class="right-panel-container" >
-      <div class="panel-head" >
-        <h4>right panel title</h4>
-      </div>
-
-      <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'list')" id="defaultOpen">list</button>
-        <button class="tablinks" onclick="openTab(event, 'notifications')">events</button>
-      </div>
-
-      <div id="list" class="tabcontent">
-        <div class="list-container">
-          <ul class="items-list"></ul>
+      <button type="button" class="collapsible panel-head"><h4>right panel title</h4></button>
+      <div class="content">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'list')" id="defaultOpen">list</button>
+          <button class="tablinks" onclick="openTab(event, 'notifications')">events</button>
+        </div>
+  
+        <div id="list" class="tabcontent">
+          <div class="list-container">
+            <ul class="items-list"></ul>
+          </div>
+        </div>
+  
+        <div id="notifications" class="tabcontent">
+          <ul class="event-list"></ul>
         </div>
       </div>
 
-      <div id="notifications" class="tabcontent">
-        <ul class="event-list"></ul>
-      </div>
-
-   
     </div>
+
+
     <div id="panel" class="left-panel-container">
-      <div class="panel-head">
-        <h4>left panel title</h4>
-      </div>
-      <div class="input-form">
-        <form action="">
-          <div class="input-field">
-            <label for="input1">label 1:</label>
-            <input placeholder="place holder 1" type="text" #input1> 
+      <button type="button" class="collapsible panel-head"><h4>left panel title</h4></button>
+      <div class="content">
+        <div class="input-form">
+          <form action="">
+            <div class="input-field">
+              <label for="input1">label 1:</label>
+              <input placeholder="place holder 1" type="text" #input1> 
+            </div>
+       
+            <div class="input-field">
+              <label for="#input2">label 2:</label>
+              <input placeholder="place holder 1" type="text" name="" id="" #input2>
+            </div>
+          </form>
+          <div class="actions">
+            <button type="button" class="action-btn" onclick="buttonClick();">Click Me!</button>
+            <button type="button" class="action-btn" onclick="buttonCustomer();">Add Customer Site</button>
           </div>
-     
-          <div class="input-field">
-            <label for="#input2">label 2:</label>
-            <input placeholder="place holder 1" type="text" name="" id="" #input2>
-          </div>
-        </form>
-        <div class="actions">
-          <button type="button" onclick="buttonClick();">Click Me!</button>
-          <button type="button" onclick="buttonCustomer();">Add Customer Site</button>
         </div>
       </div>
     </div>

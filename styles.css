@@ -26,6 +26,9 @@
     background-color: #f1f1f1;
   }
   
+  .tablinks {
+      color: rgb(95, 95, 95);
+  }
   /* Style the buttons that are used to open the tab content */
   .tab button {
     background-color: inherit;

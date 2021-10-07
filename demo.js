@@ -7,6 +7,7 @@
  *
  * @param {H.service.Platform} platform A stub class to access HERE services
  */
+
 var routetime = 0;
 function calculateRouteFromAtoB(platform,start,end) {
   if(start.type)
@@ -69,7 +70,29 @@ function calculateRouteFromAtoB(platform,start,end) {
   }
   
 }
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
 
+function openTab(evt, listName) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabcontent" and hide them
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(listName).style.display = "block";
+  evt.currentTarget.className += " active";
+} 
 
 var grouptruk = new H.map.Group();
 
@@ -84,6 +107,7 @@ function GetSortOrder(prop) {
       return 0;    
   }    
 }   
+
 var firstJobnow = new Date(); 
 function jobStartAttime(first,second){
    // var datetostart = new Date(first.taskStartTime)
@@ -649,4 +673,27 @@ fetch(
     factorySite.push(site)
    }
    addInfoBubble(map);
+});
+
+
+var listOfItems = [
+  {
+    name: 'Peanuts',
+    img: 'https://nuts.com/images/auto/801x534/assets/dd79402e574cd109.jpg',
+    desc: 'First cultivated in the valleys of Paraguay.'
+  },
+  {
+    name: 'Beans',
+    img: 'https://www.rd.com/wp-content/uploads/2014/02/03-beans-lower-cholesterol-sl.jpg',
+    desc: 'A summer crop that needs warm temperatures.'
+  },
+  {
+    name: 'Lentils',
+    img: 'https://5.imimg.com/data5/KV/EJ/MY-27379132/organic-masoor-dal-500x500.jpeg',
+    desc: 'An edible pulse from a bushy annual plant.'
+  }
+];
+
+listOfItems.forEach(function(itemType) {
+  $('.items-list').append('<li><img src="' + itemType.img + '"><div><h2>' + itemType.name + '</h2><p>' + itemType.desc + '</p></div></li>');
 });

@@ -1,0 +1,29 @@
+[
+    {
+        "factorname": "Saudi ready mix for concrete plant 59",
+        "lat": 24.935537,
+        "lng": 46.941704,
+        "address": "Al Nadah",
+        "sequence": 3,
+        "capacity": 52435,
+        "Use":1
+    },
+    {
+        "factorname": "SRMCC RM64 Batch Plant",
+        "lat": 24.905180, 
+        "lng": 46.523194,
+        "address": "AL Naseem",
+        "sequence": 2,
+        "capacity": 52435,
+        "Use":1
+    },
+    {
+        "factorname": "Saudirediymix Rm35 Al khraj",
+        "lat": 24.307679, 
+        "lng": 47.164135,
+        "address": "Al Saadah",
+        "sequence": 1,
+        "capacity": 52435,
+        "Use":1
+    }
+]

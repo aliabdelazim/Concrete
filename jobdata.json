@@ -1,0 +1,87 @@
+
+    [
+        {
+            "sequence": 1,
+            "starttine": 3433,
+            "tasks": 
+            [
+                {
+                    "Truck":1001,
+                    "taskid": 11,
+                    "lat": 24.935537,
+                    "lng": 46.941704,
+                    "sequence": 1,
+                    "eta" : 0,
+                    "taskStartTime": 0,
+                    "type": "pump",
+                    "durationinsec": 0
+                },
+                {
+                    "Truck":1001,
+                    "taskid": 2,
+                    "lat": 24.661542, 
+                    "lng":46.761373,
+                    "type": "pump",
+                    "sequence": 2,
+                    "eta" : 2,
+                    "taskStartTime": 3,
+                    "durationinsec": 1
+                }
+            ]
+	    },
+        {
+            "sequence": 2,
+            "starttine": 0,
+            "tasks": 
+            [
+                {
+                    "Truck":123,
+                    "taskid": 22,
+                    "lat": 24.905180, 
+                    "lng": 46.523194,
+                    "sequence": 1,
+                    "eta" : 0,
+                    "taskStartTime": 1,
+                    "durationinsec": 1
+                },
+                {
+                    "Truck":123,
+                    "taskid": 2,
+                    "lat": 24.661542, 
+                    "lng":46.761373,
+                    "sequence": 2,
+                    "eta" : 2,
+                    "taskStartTime": 4,
+                    "durationinsec": 1
+                }
+            ]
+	    },
+        
+        {
+            "sequence": 3,
+            "starttine": 9999,
+            "tasks": 
+            [
+                {
+                    "Truck":124,
+                    "taskid": 33,
+                    "lat": 24.307679, 
+                    "lng": 47.164135,
+                    "sequence": 1,
+                    "eta" : 0,
+                    "durationinsec": 1,
+                    "taskStartTime": 2
+                },
+                {
+                    "Truck":124,
+                    "taskid": 2,
+                    "lat": 24.661542, 
+                    "lng":46.761373,
+                    "sequence": 2,
+                    "eta" : 2,
+                    "taskStartTime": 5,
+                    "durationinsec": 1
+                }
+            ]
+	    }
+    ]

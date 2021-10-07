@@ -1,0 +1,28 @@
+
+    [
+        {
+            "sequence": 2,
+            "starttine": 0,
+            "tasks": 
+            [
+                {
+                    "taskid": 22,
+                    "lat": 56.555,
+                    "lng": 56.555,
+                    "sequence": 1,
+                    "eta" : 0,
+                    "taskStartTime": 0,
+                    "durationinsec": 1
+                },
+                {
+                    "taskid": 2,
+                    "lat": 56.555,
+                    "lng": 56.555,
+                    "sequence": 2,
+                    "eta" : 2,
+                    "taskStartTime": 3,
+                    "durationinsec": 1
+                }
+            ]
+	    }
+    ]
